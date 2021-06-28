@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\SupplierController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('v1')->group(function(){
+    Route::prefix('auth')->group(function(){
+        Route::post('register', [AuthController::class, 'register']);
+        Route::post('login', [AuthController::class, 'login']);
+        Route::post('logout', [AuthController::class, 'logout']);
+        Route::post('refresh', [AuthController::class, 'refresh']);
+        Route::post('me', [AuthController::class, 'me']);
+    });
+
+    Route::middleware('jwt.verify')->group(function() {
+        Route::apiResource('suppliers', SupplierController::class, [
+            'as' => 'api'
+        ]);
+    });
 });
+
+Route::any('{any}', function() {
+    return response()->json([
+        'status' => 'error',
+        'message' => 'Resource not found'
+    ], 404);
+})->where('any', '.*');
