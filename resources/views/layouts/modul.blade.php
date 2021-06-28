@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JagatPlay KW | @yield('title')</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/mode.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('css/mode.css')}}">
     @stack('css')
-    <link rel="icon" type="image/png" href="{{asset('img/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" href="{{secure_asset('img/favicon-32x32.png')}}">
 </head>
 
 <body>
@@ -68,7 +68,7 @@
         <h4 style="text-align: center;">&copy;2021</h4>
     </footer>
 </body>
-<script src="{{asset('js/mode.js')}}"></script>
+<script src="{{secure_asset('js/mode.js')}}"></script>
 @stack('script')
 
 </html>

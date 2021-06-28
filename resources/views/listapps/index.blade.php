@@ -20,8 +20,8 @@
 
 @endsection
 @push('css')
-<link rel="stylesheet" type="text/css" href="{{asset('css/list.css')}}">
+<link rel="stylesheet" type="text/css" href="{{secure_asset('css/list.css')}}">
 @endpush
 @push('script')
-<script src="{{asset('js/list.js')}}"></script>
+<script src="{{secure_asset('js/list.js')}}"></script>
 @endpush

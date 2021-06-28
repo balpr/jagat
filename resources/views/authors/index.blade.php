@@ -77,11 +77,11 @@
 </div> <!-- .container-fluid -->
 @endsection
 @push('css')
-<link rel="stylesheet" href="{{asset('css/dataTables.bootstrap4.css')}}">
+<link rel="stylesheet" href="{{secure_asset('css/dataTables.bootstrap4.css')}}">
 @endpush
 @push('script')
-<script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{secure_asset('js/jquery.dataTables.min.js')}}"></script>
+<script src="{{secure_asset('js/dataTables.bootstrap4.min.js')}}"></script>
 <script>
     $('#author-table').DataTable({
         autoWidth: true,

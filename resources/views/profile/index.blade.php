@@ -5,7 +5,7 @@
 	<h2 style="font-weight: bold;">Profil</h2>
 	<div style="height: 400px; width: 700px; border-radius: 10px; background-color: #293a4b; ">
 		<div style="padding: 50px; color: white;">
-			<img src="{{asset('img/profil.jpg')}}" style="height: auto; width: 200px; float: left; margin-right: 20px; border-radius: 10px">
+			<img src="{{secure_asset('img/profil.jpg')}}" style="height: auto; width: 200px; float: left; margin-right: 20px; border-radius: 10px">
 			<div style="background-color: white; margin-left: 240px; border-radius: 10px">
 				<table style="font-size: 16px; color: #293a4b; font-weight: bold;padding: 30px">
 					<tr>

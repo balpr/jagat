@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{asset('img/favicon-32x32.png')}}">
+    <link rel="icon" href="{{secure_asset('img/favicon-32x32.png')}}">
     <title>News Admin | @yield('title')</title>
     <!-- Simple bar CSS -->
-    <link rel="stylesheet" href="{{asset('css/simplebar.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/simplebar.css')}}">
     <!-- Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Icons CSS -->
-    <link rel="stylesheet" href="{{asset('css/feather.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/feather.css')}}">
     <!-- Date Range Picker CSS -->
-    <link rel="stylesheet" href="{{asset('css/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/daterangepicker.css')}}">
     <!-- App CSS -->
-    <link rel="stylesheet" href="{{asset('css/app-light.css')}}" id="lightTheme">
-    <link rel="stylesheet" href="{{asset('css/app-dark.css')}}" id="darkTheme" disabled>
+    <link rel="stylesheet" href="{{secure_asset('css/app-light.css')}}" id="lightTheme">
+    <link rel="stylesheet" href="{{secure_asset('css/app-dark.css')}}" id="darkTheme" disabled>
     @stack('css')
 </head>
 
@@ -51,7 +51,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="avatar avatar-sm mt-2">
-                            <img src="{{asset('assets/avatars/face-1.jpg')}}" alt="..." class="avatar-img rounded-circle">
+                            <img src="{{secure_asset('assets/avatars/face-1.jpg')}}" alt="..." class="avatar-img rounded-circle">
                         </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
@@ -233,31 +233,31 @@
             </div>
         </main> <!-- main -->
     </div> <!-- .wrapper -->
-    <script src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('js/popper.min.js')}}"></script>
-    <script src="{{asset('js/moment.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/simplebar.min.js')}}"></script>
-    <script src="{{asset('js/daterangepicker.js')}}"></script>
-    <script src="{{asset('js/jquery.stickOnScroll.js')}}"></script>
-    <script src="{{asset('js/tinycolor-min.js')}}"></script>
-    <script src="{{asset('js/config.js')}}"></script>
-    <script src="{{asset('js/d3.min.js')}}"></script>
-    <script src="{{asset('js/topojson.min.js')}}"></script>
-    <script src="{{asset('js/datamaps.all.min.js')}}"></script>
-    <script src="{{asset('js/datamaps-zoomto.js')}}"></script>
-    <script src="{{asset('js/datamaps.custom.js')}}"></script>
-    <script src="{{asset('js/Chart.min.js')}}"></script>
+    <script src="{{secure_asset('js/jquery.min.js')}}"></script>
+    <script src="{{secure_asset('js/popper.min.js')}}"></script>
+    <script src="{{secure_asset('js/moment.min.js')}}"></script>
+    <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{secure_asset('js/simplebar.min.js')}}"></script>
+    <script src="{{secure_asset('js/daterangepicker.js')}}"></script>
+    <script src="{{secure_asset('js/jquery.stickOnScroll.js')}}"></script>
+    <script src="{{secure_asset('js/tinycolor-min.js')}}"></script>
+    <script src="{{secure_asset('js/config.js')}}"></script>
+    <script src="{{secure_asset('js/d3.min.js')}}"></script>
+    <script src="{{secure_asset('js/topojson.min.js')}}"></script>
+    <script src="{{secure_asset('js/datamaps.all.min.js')}}"></script>
+    <script src="{{secure_asset('js/datamaps-zoomto.js')}}"></script>
+    <script src="{{secure_asset('js/datamaps.custom.js')}}"></script>
+    <script src="{{secure_asset('js/Chart.min.js')}}"></script>
     <script>
         /* defind global options */
         Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
         Chart.defaults.global.defaultFontColor = colors.mutedColor;
     </script>
-    <script src="{{asset('js/gauge.min.js')}}"></script>
-    <script src="{{asset('js/jquery.sparkline.min.js')}}"></script>
-    <script src="{{asset('js/apexcharts.min.js')}}"></script>
-    <script src="{{asset('js/apexcharts.custom.js')}}"></script>
-    <script src="{{asset('js/apps.js')}}"></script>
+    <script src="{{secure_asset('js/gauge.min.js')}}"></script>
+    <script src="{{secure_asset('js/jquery.sparkline.min.js')}}"></script>
+    <script src="{{secure_asset('js/apexcharts.min.js')}}"></script>
+    <script src="{{secure_asset('js/apexcharts.custom.js')}}"></script>
+    <script src="{{secure_asset('js/apps.js')}}"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
     <script>
